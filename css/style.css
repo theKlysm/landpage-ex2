@@ -52,7 +52,6 @@ header{
 
 section.cover-form{
     width: 100%;
-    padding: 0 2%;
 }
 
 .bg{
@@ -119,6 +118,7 @@ section.cover-form{
 .section.chamada{
     text-align: center;
     z-index: 1;
+    padding: 30px 0;
     width: 100%;
     background-color: #29526d;
 }
@@ -129,6 +129,7 @@ section.cover-form{
     display: inline-block;
     color: white;
     font-size: 24px;
+    text-transform: uppercase;
     font-weight: normal;
 }
 

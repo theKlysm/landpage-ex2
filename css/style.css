@@ -158,6 +158,16 @@ section.chamada p{
     font-weight: normal;
 }
 
+.flex-mosaico{
+    display: flex;
+}
+
+.item-1-mosaico{
+    background-position: center;
+    background-size: cover;
+    width: 70%;
+}
+
 @media screen and (max-width: 960px){
     .bg{
         padding: 40px 0;

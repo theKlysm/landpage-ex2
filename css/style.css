@@ -124,13 +124,39 @@ section.cover-form{
 }
 
 .section.chamada h2{
-    width: 96%;
+    width: 98%;
     max-width: 700px;
     display: inline-block;
     color: white;
     font-size: 24px;
     text-transform: uppercase;
     font-weight: normal;
+}
+
+.section.chamada p{
+    width: 98%;
+    max-width: 700px;
+    display: inline-block;
+    color: white;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 960px){
+    .bg{
+        padding: 40px 0;
+        height: auto;
+        text-align: center;
+    }
+
+    .form-container{
+        position: static;
+        height: auto;
+        width: 96%;
+        max-width: 400px;
+        display: inline-block;
+    }
 }
 
 @media screen and (max-width: 510px){

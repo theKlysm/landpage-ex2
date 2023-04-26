@@ -1,12 +1,15 @@
+/* Reset */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 html, body{
     height: 100%;
 }
+/********/
 
 /* Divs gerais */
 .container{
@@ -21,8 +24,8 @@ html, body{
 /********/
 
 header{
-    background-color: #D6D6D6;
-    padding: 30px 2%;
+    background-color: rgb(180, 180, 180);
+    padding: 10px 2% 40px 2%;
 }
 
 .logo-1{
@@ -66,15 +69,16 @@ section.cover-form{
     height: 110%;
     position: relative;
     top: -5%;
+    box-shadow: 1px 1px 2px 1px rgb(180, 180, 180);
     background-color: white;
 }
 
 .form-container h2{
     font-weight: normal;
-    padding: 20px 15px;
+    padding: 25px 15px;
     color: black;
     font-size: 18px;
-    background-color: rgb(234, 236, 239);
+    background-color: rgb(211, 211, 211);
 }
 
 .form-container form{
@@ -112,6 +116,23 @@ section.cover-form{
     height: 50px;
     cursor: pointer;
     border: 0;
+}
+
+.section.chamada{
+    padding: 30px 0;
+    display: inline-block;
+    text-align: center;
+    background-color: #7c6757;
+    width: 100%;
+}
+
+.section.chamada h2{
+    width: 96%;
+    max-width: 600px;
+    display: inline-block;
+    color: white;
+    font-size: 30px;
+    font-weight: normal;
 }
 
 @media screen and (max-width: 510px){

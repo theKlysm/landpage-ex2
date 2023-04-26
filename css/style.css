@@ -67,6 +67,7 @@ section.cover-form{
     margin-right: 40px;
     width: 400px;
     height: 110%;
+    z-index: 2;
     position: relative;
     top: -5%;
     box-shadow: 1px 1px 2px 1px rgb(180, 180, 180);
@@ -119,19 +120,26 @@ section.cover-form{
 }
 
 .section.chamada{
-    padding: 30px 0;
     display: inline-block;
     text-align: center;
+    position: relative;
+    top: -50px;
+    z-index: 1;
     background-color: #7c6757;
     width: 100%;
 }
 
+.section.chamada .container{
+    padding: 50px 0;
+    background-color: #7c6757;
+}
+
 .section.chamada h2{
     width: 96%;
-    max-width: 600px;
+    max-width: 700px;
     display: inline-block;
     color: white;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: normal;
 }
 

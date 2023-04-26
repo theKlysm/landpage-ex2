@@ -59,7 +59,7 @@ section.cover-form{
     height: 560px;
     background-position: center;
     background-size: cover;
-    background-image: url('../images/bg-form.jpg');
+    background-image: url(../images/bg-form.jpg);
 }
 
 .form-container{
@@ -124,6 +124,18 @@ section.chamada{
     padding: 30px 0;
     width: 100%;
     background-color: #29526d;
+}
+
+.icone-seta{
+    position: relative;
+    left: 50%;
+    top: -32px;
+    transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    width: 64px;
+    height: 64px;
+    background-size: 100% 100%;
+    background-image: url('../images/arrow.png');
 }
 
 section.chamada h2{

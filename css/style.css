@@ -14,7 +14,7 @@ html, body{
 /* Divs gerais */
 .container{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1024px;
     margin: 0 auto;
 }
 
@@ -24,15 +24,15 @@ html, body{
 /********/
 
 header{
-    background-color: rgb(180, 180, 180);
-    padding: 10px 2% 40px 2%;
+    background-color: rgb(220, 220, 220);
+    padding: 10px 2% 25px 2%;
 }
 
 .logo-1{
     float: left;
     width: 160px;
     height: 60px;
-    background-image: url('../images/logo-1.png');
+    background-image: url('../images/logo1.png');
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -43,7 +43,7 @@ header{
     float: right;
     width: 160px;
     height: 60px;
-    background-image: url('../images/logo-2.png');
+    background-image: url('../images/logo2.png');
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -55,7 +55,8 @@ section.cover-form{
 }
 
 .bg{
-    height: 500px;
+    position: relative;
+    height: 560px;
     background-position: center;
     background-size: cover;
     background-image: url('../images/bg-form.jpg');
@@ -66,7 +67,9 @@ section.cover-form{
     margin-right: 40px;
     width: 400px;
     height: 100%;
-    box-shadow: 1px 1px 2px 1px rgb(180, 180, 180);
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(180, 180, 180, 1);
+	-moz-box-shadow: 2px 2px 5px 0px rgba(180, 180, 180, 1);
+    box-shadow: 1px 1px 2px 1px rgb(180, 180, 180, 1);
     background-color: white;
 }
 
@@ -115,7 +118,7 @@ section.cover-form{
     border: 0;
 }
 
-.section.chamada{
+section.chamada{
     text-align: center;
     z-index: 1;
     padding: 30px 0;
@@ -123,7 +126,7 @@ section.cover-form{
     background-color: #29526d;
 }
 
-.section.chamada h2{
+section.chamada h2{
     width: 98%;
     max-width: 700px;
     display: inline-block;
@@ -133,7 +136,7 @@ section.cover-form{
     font-weight: normal;
 }
 
-.section.chamada p{
+section.chamada p{
     width: 98%;
     max-width: 700px;
     display: inline-block;

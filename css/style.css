@@ -66,10 +66,7 @@ section.cover-form{
     float: right;
     margin-right: 40px;
     width: 400px;
-    height: 110%;
-    z-index: 2;
-    position: relative;
-    top: -5%;
+    height: 100%;
     box-shadow: 1px 1px 2px 1px rgb(180, 180, 180);
     background-color: white;
 }
@@ -120,18 +117,10 @@ section.cover-form{
 }
 
 .section.chamada{
-    display: inline-block;
     text-align: center;
-    position: relative;
-    top: -50px;
     z-index: 1;
-    background-color: #7c6757;
     width: 100%;
-}
-
-.section.chamada .container{
-    padding: 50px 0;
-    background-color: #7c6757;
+    background-color: #29526d;
 }
 
 .section.chamada h2{

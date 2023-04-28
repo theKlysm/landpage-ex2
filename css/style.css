@@ -193,6 +193,19 @@ section.chamada p{
     }
 }
 
+footer{
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer img{
+    width: 120px;
+}
+
+footer p{
+    margin-top: 8px;
+}
+
 @media screen and (max-width: 960px){
     .bg{
         padding: 40px 0;

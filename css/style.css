@@ -9,9 +9,10 @@
 html, body{
     height: 100%;
 }
-/********/
+/* Reset */
 
-/* Divs gerais */
+
+/* General divs */
 .container{
     width: 100%;
     max-width: 1024px;
@@ -21,8 +22,9 @@ html, body{
 .clear{
     clear: both;
 }
-/********/
+/* General divs */
 
+/* Header */
 header{
     background-color: rgb(220, 220, 220);
     padding: 10px 2% 25px 2%;
@@ -30,7 +32,7 @@ header{
 
 .logo-1{
     float: left;
-    width: 160px;
+    width: 150px;
     height: 60px;
     background-image: url('../images/logo1.png');
     background-size: 100% auto;
@@ -49,7 +51,10 @@ header{
     background-position: center;
     /*background-color: green;*/
 }
+/* Header */
 
+
+/* Body */
 section.cover-form{
     width: 100%;
 }
@@ -62,14 +67,17 @@ section.cover-form{
     background-image: url(../images/bg-form.jpg);
 }
 
+/* Form */
 .form-container{
-    float: right;
-    margin-right: 40px;
+    position: absolute;
+    right: 30px;
+    z-index: 2;
+    top: -2.5%;
     width: 400px;
-    height: 100%;
+    height: 105%;
     -webkit-box-shadow: 2px 2px 5px 0px rgba(180, 180, 180, 1);
 	-moz-box-shadow: 2px 2px 5px 0px rgba(180, 180, 180, 1);
-    box-shadow: 1px 1px 2px 1px rgb(180, 180, 180, 1);
+    box-shadow: 2px 2px 5px 0px rgb(180, 180, 180, 1);
     background-color: white;
 }
 
@@ -82,7 +90,7 @@ section.cover-form{
 }
 
 .form-container form{
-    margin-top: 8px;
+    margin-top: 20px;
     padding: 15px;
 }
 
@@ -91,20 +99,20 @@ section.cover-form{
     color: #525252;
 }
 
+.form-wraper:not(:first-child){
+    margin-top: 40px;
+}
+
+.form-wraper:last-child{
+    margin-top: 20px;
+}
+
 .form-container form input[type=text]{
     width: 100%;
     border: 1px solid #ccc;
     height: 45px;
     line-height: 45px;
     padding-left: 10px;
-}
-
-.form-wraper:not(:first-child){
-    margin-top: 20px;
-}
-
-.form-wraper:last-child{
-    margin-top: 20px;
 }
 
 .form-container form input[type=submit]{
@@ -117,25 +125,31 @@ section.cover-form{
     cursor: pointer;
     border: 0;
 }
+/* Form */
 
+/* Chamada */
 section.chamada{
-    text-align: center;
     z-index: 1;
-    padding: 30px 0;
+    text-align: center;
     width: 100%;
-    background-color: #29526d;
+    position: relative;
 }
 
 .icone-seta{
-    position: relative;
+    position: absolute;
     left: 50%;
     top: -32px;
-    transform: translateX(50%);
-    -ms-transform: translateX(50%);
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     width: 64px;
     height: 64px;
     background-size: 100% 100%;
     background-image: url('../images/arrow.png');
+}
+
+section.chamada div.container{
+    background-color: #29526d;
+    padding: 70px 0 50px 0;
 }
 
 section.chamada h2{
@@ -157,7 +171,9 @@ section.chamada p{
     font-size: 18px;
     font-weight: normal;
 }
+/* Chamada */
 
+/* Flex mosaico */
 .flex-mosaico{
     display: flex;
 }
@@ -170,12 +186,48 @@ section.chamada p{
 
 .item-2-mosaico{
     width: 40%;
-    padding: 60px 40px;
+    padding: 90px 40px;
     background-color: #215170;
 }
 
 .item-2-mosaico p{
     color: white;
+}
+/* Flex mosaico */
+
+/* Footer */
+footer{
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgb(220, 220, 220);
+}
+
+footer img{
+    width: 130px;
+}
+
+footer p{
+    margin-top: 8px;
+}
+/* Footer */
+/* Body */
+
+/* Media screen */
+@media screen and (max-width: 1024px){
+    .bg{
+        padding: 80px 0;
+        height: auto;
+        text-align: center;
+    }
+
+    .form-container{
+        text-align: left;
+        height: auto;
+        width: 96%;
+        max-width: 400px;
+        position: static;
+        display: inline-block;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -189,36 +241,8 @@ section.chamada p{
     }
     
     .item-2-mosaico{
+        text-align: justify;
         width: 100%;
-    }
-}
-
-footer{
-    text-align: center;
-    padding: 20px 0;
-}
-
-footer img{
-    width: 120px;
-}
-
-footer p{
-    margin-top: 8px;
-}
-
-@media screen and (max-width: 960px){
-    .bg{
-        padding: 40px 0;
-        height: auto;
-        text-align: center;
-    }
-
-    .form-container{
-        position: static;
-        height: auto;
-        width: 96%;
-        max-width: 400px;
-        display: inline-block;
     }
 }
 
@@ -233,3 +257,4 @@ footer p{
         float: none;
     }
 }
+/* Media screen */
